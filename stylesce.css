@@ -1,0 +1,44 @@
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Confidential and Top Secret Labels */
+#confidential,
+#top-secret {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  border: 2px solid red;
+  font-weight: bold;
+  color: red;
+  background-color: #fff0f0;
+  transform: rotate(-5deg);
+}
+
+/* Add a slight opposite tilt for variety */
+#top-secret {
+  transform: rotate(4deg);
+  color: darkred;
+  border-color: darkred;
+  background-color: #ffe6e6;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* Blurred text */
+.blurred {
+  filter: blur(3px);
+  background-color: #ddd;
+  color: transparent;
+  text-shadow: 0 0 5px black;
+}

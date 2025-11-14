@@ -1,0 +1,47 @@
+/* Set body background color */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container to hold all color boxes */
+.color-grid {
+  display: flex;
+  gap: 15px;
+}
+
+/* Base styling for each color box */
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+/* 1. Hexadecimal color */
+.color1 {
+  background-color: #ff5733;
+}
+
+/* 2. RGB color */
+.color2 {
+  background-color: rgb(0, 128, 255);
+}
+
+/* 3. Predefined (word) color */
+.color3 {
+  background-color: green;
+}
+
+/* 4. HSL color */
+.color4 {
+  background-color: hsl(300, 70%, 50%);
+}
+
+/* 5. Any background color */
+.color5 {
+  background-color: coral;
+}

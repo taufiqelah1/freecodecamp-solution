@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  </head>
+  <body>
+    <h1  id="title">Coding school form</h1>
+    <form id="survey-form">
+      <p id="description">Let us know a little about you.</p>
+
+      <label id="name-label" for="name">* NAME : </label>
+      <input id="name" type="text" placeholder=" enter your name" required>
+
+      <label id="email-label">* E-MAIL : </label>
+      <input id="email" type="email" placeholder=" enter your email" required>
+
+      <label id="number-label">* AGE : </label>
+      <input id="number" type="number" placeholder=" age" min="18" max="30" required>
+
+      <label target>WHAT FIELD OF TECHNOLOGY YOU INTERESTED IN :</label>
+      <select id="dropdown">
+        <option value="Web technology">Web technology</option>
+        <option value="Penetration testing">Penetration testing</option>
+        <option value="Networking">Networking</option>
+        <option value="data science">Data science</option>
+      </select>
+
+      <label target>HOW LONG YOU WOULD LIKE TO STUDY WITH US ? : </label>
+      <div id="radio">
+        <label for="1">
+          <input type="radio" name="period" id="1" value="1 year">1 YEAR
+        </label>
+        <label for="2">
+          <input type="radio" name="period" id="2" value="2 years">2 YEARS
+        </label>
+        <label for="3">
+          <input type="radio" name="period" id="3" value="3 years">3 YEARS
+        </label>
+      </div>
+
+      <label target>WHICH LEARNING STYLE DO YOU PREFER :</label>
+      <div id="check">
+        <label for="a">
+          <input type="checkbox" name="lt" id="a" value="self-learning">SELF-LEARNING
+        </label>
+        <label for="b">
+          <input type="checkbox" name="lt" id="b" value="learning with teacher">LEARNING WITH TEACHER
+        </label>
+        <label for="c">
+          <input type="checkbox" name="lt" id="c" value="group learning">GROUP LEARNING
+        </label>
+        <label for="d">
+          <input type="checkbox" name="lt" id="d" value="onlign learning">ONLIGN LEARNING
+        </label>
+        <label for="c">
+          <input type="checkbox" name="lt" id="c" value="private learning">PRIVATE LEARNING
+        </label>
+      </div>
+
+      <label target>TEL US SOMETHIG ELSE:</label>
+      <textarea placeholder="enter any comments or suggestion here"></textarea>
+
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

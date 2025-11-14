@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+</head>
+<body>
+  <h1>Multimedia Player</h1>
+
+  <!-- Section 1: Now Playing (Audio) -->
+  <section aria-labelledby="now-playing-title">
+    <h2 id="now-playing-title">Now Playing</h2>
+    <p id="track-title">Sailing Away</p>
+
+    <audio controls aria-label="Audio player">
+      <source src="audio.mp3" type="audio/mpeg">
+      <source src="audio.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Section 2: Video Demo -->
+  <section aria-labelledby="video-demo-title">
+    <h2 id="video-demo-title">Video Demo</h2>
+
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section 3: Shortcuts / Attributes -->
+  <section aria-labelledby="shortcuts-title">
+    <h2 id="shortcuts-title">Shortcuts</h2>
+    <ul>
+      <li>Play/Pause</li>
+      <li>Mute</li>
+      <li>Loop</li>
+    </ul>
+  </section>
+</body>
+</html>

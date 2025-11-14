@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spicy Lemon Garlic Pasta</title>
+  <style>
+    :root {
+      --bg: #0f172a; /* slate-900 */
+      --card: #111827ee; /* gray-900 with alpha */
+      --ink: #e5e7eb; /* gray-200 */
+      --muted: #94a3b8; /* slate-400 */
+      --accent: #f59e0b; /* amber-500 */
+      --pill: #1f2937; /* gray-800 */
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: radial-gradient(1200px 800px at 10% 10%, #1e293b 0%, var(--bg) 40%),
+                  radial-gradient(1200px 800px at 90% 0%, #0b1020 0%, var(--bg) 55%);
+      display: grid;
+      place-items: start center;
+      padding: 2rem 1rem 4rem;
+    }
+    .card {
+      width: 100%;
+      max-width: 880px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    header {
+      padding: 2rem 2rem 1rem;
+      display: grid;
+      gap: .5rem;
+    }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0; }
+    p.lead { color: var(--muted); margin: 0.25rem 0 0; }
+    .hero {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    main { padding: 1.25rem 2rem 2rem; display: grid; gap: 1.25rem; }
+    h2 { font-size: 1.5rem; margin: 1rem 0 .5rem; }
+    ul, ol { margin: 0; padding-left: 1.25rem; }
+    li { margin: .4rem 0; }
+    .meta { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .5rem; }
+    .pill { background: var(--pill); border: 1px solid rgba(255,255,255,0.08); padding: .35rem .6rem; border-radius: 999px; font-size: .85rem; color: var(--muted); }
+    footer { color: var(--muted); font-size: .875rem; padding: 0 2rem 1.25rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <article class="card" aria-labelledby="recipe-title">
+    <img class="hero" src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="A plate of pasta topped with lemon, garlic, herbs, and chili flakes" />
+    <header>
+      <h1 id="recipe-title">Spicy Lemon Garlic Pasta</h1>
+      <p class="lead">A bright, zesty weeknight pasta that comes together in under 25 minutes—silky, garlicky, and finished with a whisper of chili heat.</p>
+      <div class="meta" aria-label="Recipe quick facts">
+        <span class="pill">Serves: 2–3</span>
+        <span class="pill">Prep: 10 min</span>
+        <span class="pill">Cook: 15 min</span>
+        <span class="pill">Vegan-friendly</span>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="ingredients-heading">
+        <h2 id="ingredients-heading">Ingredients</h2>
+        <ul>
+          <li>200 g spaghetti (or your favorite pasta)</li>
+          <li>3 tbsp olive oil</li>
+          <li>4 cloves garlic, thinly sliced</li>
+          <li>1 tsp red pepper flakes (adjust to taste)</li>
+          <li>1 lemon (zest and juice)</li>
+          <li>Salt and black pepper to taste</li>
+          <li>Fresh parsley, chopped (optional)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="instructions-heading">
+        <h2 id="instructions-heading">Instructions</h2>
+        <ol>
+          <li>Boil pasta in well-salted water until al dente. Reserve 3/4 cup pasta water; drain.</li>
+          <li>Warm olive oil in a skillet over medium heat. Add garlic and cook until fragrant, about 60–90 seconds.</li>
+          <li>Stir in red pepper flakes and lemon zest; cook 20 seconds.</li>
+          <li>Add 1/2 cup reserved pasta water to the pan and bring to a gentle simmer.</li>
+          <li>Toss in the drained pasta and lemon juice; swirl until the sauce becomes glossy, adding more water if needed.</li>
+          <li>Season with salt and black pepper. Finish with parsley and serve immediately.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      Tip: For extra richness, finish with a knob of butter or a drizzle of good olive oil. Share your spin with friends!
+    </footer>
+  </article>
+</body>
+</html>

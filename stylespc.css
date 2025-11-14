@@ -1,0 +1,54 @@
+/* The container for all cards */
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Each individual card */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 180px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+}
+
+/* Left corner */
+.left {
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+/* Middle suit symbol */
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+/* Right corner */
+.right {
+  align-self: flex-end;
+  font-size: 1.2rem;
+}
+
+/* Add red color for hearts and diamonds */
+.card:nth-child(2) .left,
+.card:nth-child(2) .middle,
+.card:nth-child(2) .right,
+.card:nth-child(3) .left,
+.card:nth-child(3) .middle,
+.card:nth-child(3) .right {
+  color: red;
+}
